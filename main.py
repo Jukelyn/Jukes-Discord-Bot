@@ -170,6 +170,38 @@ async def mathsqrt(ctx, x: float):
 
     except:
         pass
+@client.command(aliases=['Power', 'power', 'pow'])
+async def mathpow(ctx, x: int, y: int):
+    try:
+        result = math.pow(x,y)
+        await ctx.send(result)
+    except:
+        pass
+@client.command(aliases=['Power', 'power', 'pow'])
+async def mathpow(ctx, x: int, y: int):
+    try:
+        result = math.pow(x,y)
+        await ctx.send(result)
+    except:
+        pass
+@client.command(aliases=['log10', 'Log10', 'logx'])
+async def log10(ctx, x: float)
+    try:
+        if x < 0:
+            return
+        else:
+            result = math.log10(x)
+            await ctx.send(result)
+    except:
+        pass
+@client.command(aliases=['exp', 'Exp', 'exponent', 'Exponent'])
+async def exp(ctx, x: float)
+    try:
+        result = math.exp(x)
+        await ctx.send(result)
+    except:
+        pass
+
 
 
 ########################################################### Genshin Commands Below here ###########################################################
